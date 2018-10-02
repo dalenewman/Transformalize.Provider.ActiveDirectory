@@ -1,0 +1,21 @@
+<cfg name="readme">
+
+   <connections>
+      <add name="input" provider="activedirectory" delimiter="*" />
+   </connections>
+
+   <entities>
+      <add name="entity" page="1" size="10">
+         <filter>
+            <!-- https://docs.microsoft.com/en-us/windows/desktop/adsi/search-filter-syntax -->
+            <add expression="(&(mail=*)(objectClass=user)(objectCategory=person))" />
+         </filter>
+         <fields>
+            <add name="cn" alias="Name" />
+            <add name="mail" alias="Mail" primary-key="true" length="128" />
+            <add name="telephoneNumber" alias="Phone" />
+            <add name="mobile" alias="Mobile" />
+         </fields>
+      </add>
+   </entities>
+</cfg>
