@@ -1,6 +1,6 @@
 ### Overview
 
-This is the beginnings of an Active Directory input provider for Transformalize. It is a plug-in compatible with Transformalize 0.3.7-beta.
+This is the beginnings of an Active Directory input provider for Transformalize. It is a plug-in compatible with Transformalize 0.3.8-beta.
 
 Build the Autofac project and put it's output into Transformalize's *plugins* folder.
 
