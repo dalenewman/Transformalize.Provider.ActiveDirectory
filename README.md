@@ -1,8 +1,6 @@
 ### Overview
 
-This is the beginnings of an Active Directory input provider for Transformalize. It is a plug-in compatible with Transformalize 0.3.8-beta.
-
-Build the Autofac project and put it's output into Transformalize's *plugins* folder.
+The start of an Active Directory input provider for Transformalize.
 
 ### Usage
 
@@ -31,4 +29,5 @@ Build the Autofac project and put it's output into Transformalize's *plugins* fo
 </cfg>
 ```
 
-**Caution**: Active Directory requires you know what attributes are available and a special syntax for filtering them.
+Active Directory requires you know what attributes are 
+available and a [special syntax](https://docs.microsoft.com/en-us/windows/desktop/adsi/search-filter-syntax) for filtering them.

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transformalize.Provider.ActiveDirectory", "src\Transformalize.Provider.ActiveDirectory\Transformalize.Provider.ActiveDirectory.csproj", "{843A7294-50A4-4019-87F6-B6F85DDD4AC1}"
 EndProject
@@ -12,6 +12,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0FAF28B-3075-4B6A-A021-E09B74C311B9}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{FAA9D21A-AE09-4F9F-922B-47557B1386E7}"
+	ProjectSection(SolutionItems) = preProject
+		nuget\nuget.bat = nuget\nuget.bat
+		nuget\Transformalize.Provider.ActiveDirectory.Autofac.nuspec = nuget\Transformalize.Provider.ActiveDirectory.Autofac.nuspec
+		nuget\Transformalize.Provider.ActiveDirectory.nuspec = nuget\Transformalize.Provider.ActiveDirectory.nuspec
 	EndProjectSection
 EndProject
 Global
@@ -35,6 +42,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAA9D21A-AE09-4F9F-922B-47557B1386E7} = {C0FAF28B-3075-4B6A-A021-E09B74C311B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2F1690C-C07A-4D1D-BB3A-44480E5134F0}
