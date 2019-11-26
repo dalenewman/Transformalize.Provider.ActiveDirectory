@@ -6,7 +6,7 @@ using Transformalize.Context;
 using Transformalize.Contracts;
 using Transformalize.Impl;
 using Transformalize.Provider.ActiveDirectory;
-using Transformalize.Providers.Trace;
+using Transformalize.Providers.Console;
 using Process = Transformalize.Configuration.Process;
 
 namespace UnitTests {
@@ -38,11 +38,11 @@ namespace UnitTests {
                }
             }
          };
-         process.Check();
+         process.Load();
 
          Assert.AreEqual(0, process.Errors().Length);
 
-         var logger = new TraceLogger(LogLevel.Debug);
+         var logger = new ConsoleLogger(LogLevel.Debug);
          var context = new PipelineContext(logger, process, process.Entities[0]);
          var input = new InputContext(context);
          var reader = new ActiveDirectoryReader(input, new RowFactory(context.Entity.Fields.Count, true, false));
